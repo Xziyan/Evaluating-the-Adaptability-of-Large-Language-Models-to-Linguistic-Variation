@@ -1,0 +1,64 @@
+poetry:
+  - input: "Donc luttons. Plus que Troie et Tyr, plus que Numance, Paris assiégé doit l’exemple. Soyons grands. Affrontons les bandits conduits par les tyrans. Les Huns reviennent comme au temps de Frédégaire."
+    output: |
+      <root>
+      Donc luttons. Plus que <entity type="LOC">Troie</entity> et <entity type="LOC">Tyr</entity>, plus que <entity type="LOC">Numance</entity>, <entity type="LOC">Paris</entity> assiégé doit l’exemple. Soyons grands. Affrontons les bandits conduits par les tyrans. Les <entity type="PERS">Huns</entity> reviennent comme <entity type="TIME">au temps de <entity type="PERS">Frédégaire</entity></entity>.
+      </root>
+
+  - input: "— O nuit de Syracuse: Urne aux flancs arrondis! Logique de Platon! Ame de Pythagore! Ancien Testament des Hellènes; amphore Qui verses dans les coeurs un vin sombre et hardi, Je sais bien les secrets que ton ombre m’a dits."
+    output: |
+      <root>
+      — O nuit de <entity type="LOC">Syracuse</entity>: Urne aux flancs arrondis! Logique de <entity type="PERS">Platon</entity>! Ame de <entity type="PERS">Pythagore</entity>! <entity type="PROD">Ancien Testament</entity> des <entity type="PERS">Hellènes</entity>; amphore Qui verses dans les coeurs un vin sombre et hardi, Je sais bien les secrets que ton ombre m’a dits.
+      </root>
+
+prose:
+  - input: "Heureusement pour la réputation de l’astéroïde B 612 un dictateur turc imposa à son peuple, sous peine de mort, de s’habiller à l’Européenne. L’astronome refit sa démonstration en 1920, dans un habit très élégant."
+    output: |
+      <root>
+      Heureusement pour la réputation de l’<entity type="PROD">astéroïde B 612</entity> un <entity type="PERS">dictateur turc</entity> imposa à son peuple, sous peine de mort, de s’habiller à l’Européenne. L’astronome refit sa démonstration <entity type="TIME">en 1920</entity>, dans un habit très élégant.
+      </root>
+
+  - input: "La grande Anaïs fait sauter en l’air les cahiers de Marie Belhomme toute désemparée, et enfouit prudemment dans sa poche un Gil Blas Illustré qu’elle abritait entre deux feuilles de son histoire de France."
+    output: |
+      <root>
+      La grande <entity type="PERS">Anaïs</entity> fait sauter en l’air les cahiers de <entity type="PERS">Marie Belhomme</entity> toute désemparée, et enfouit prudemment dans sa poche un <entity type="PROD">Gil Blas Illustré</entity> qu’elle abritait entre deux feuilles de son histoire de <entity type="LOC">France</entity>.
+      </root>
+
+encyclopedia:
+  - input: "La Tour Eiffel est un monument de Paris conçu par Gustave Eiffel en 1889."
+    output: |
+      <root>
+      <entity type="PROD">La Tour Eiffel</entity> est un monument de <entity type="LOC">Paris</entity> conçu par <entity type="PERS">Gustave Eiffel</entity> <entity type="TIME">en 1889</entity>.
+      </root>
+
+  - input: "L’ONU a été fondée en 1945 à San Francisco."
+    output: |
+      <root>
+      L’<entity type="ORG">ONU</entity> a été fondée <entity type="TIME">en 1945</entity> à <entity type="LOC">San Francisco</entity>.
+      </root>
+
+information:
+  - input: "Soixante-cinq personnes ont été interpellées mercredi matin dans l’agglomération parisienne – Paris et les départements de la petite couronne –, selon les chiffres communiqués à 7 h 45 par la Préfecture de police."
+    output: |
+      <root>
+      Soixante-cinq personnes ont été interpellées <entity type="TIME">mercredi matin</entity> dans l’<entity type="LOC">agglomération parisienne</entity> – <entity type="LOC">Paris</entity> et <entity type="LOC">les départements de <entity type="LOC">la petite couronne</entity></entity> –, selon les chiffres communiqués <entity type="TIME">à 7 h 45</entity> par la <entity type="ORG">Préfecture de police</entity>.
+      </root>
+
+  - input: "À propos : CHAMPIONNAT DE France VTT SAPEURS POMPIERS. Remise des dossards le vendredi 19 septembre à partir de 14h au foyer municipal Ouverture officielle à 19h00 à la caserne. Soirée de « gala » animé par le groupe « B O’Celtish » avec planches apéro."
+    output: |
+      <root>
+      À propos : <entity type="EVENT">CHAMPIONNAT DE <entity type="LOC">France</entity> VTT SAPEURS POMPIERS</entity>. Remise des dossards <entity type="TIME">le vendredi 19 septembre à partir de 14h</entity> au foyer municipal Ouverture officielle <entity type="TIME">à 19h00</entity> à la caserne. Soirée de « gala » animé par le groupe « <entity type="PERS">B O’Celtish</entity> » avec planches apéro.
+      </root>
+
+spoken:
+  - input: "oui de quatorze heures à dix-huit heures le mardi matin de huit heures à midi encore"
+    output: |
+      <root>
+      oui <entity type="TIME">de quatorze heures à dix-huit heures le mardi matin</entity> <entity type="TIME">de huit heures à midi</entity> encore
+      </root>
+
+  - input: "oui euh qu'est-ce que c'est ? une quatre cent trois Peugeot oui et com- pourq- pourquoi vous avez choisi s- ? parce que j'ai toujours eu des Peugeot"
+    output: |
+      <root>
+      oui euh qu'est-ce que c'est ? une <entity type="PROD">quatre cent trois Peugeot</entity> oui et com- pourq- pourquoi vous avez choisi s- ? parce que j'ai toujours eu des <entity type="PROD">Peugeot</entity>
+      </root>
