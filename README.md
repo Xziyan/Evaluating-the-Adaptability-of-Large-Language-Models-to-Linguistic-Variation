@@ -1,16 +1,16 @@
 
 ## Adaptability of Large Language Models (LLMs) to Attested Linguistic Genres 
 This repository accompanies a research project aimed at evaluating the extent to which large language models (LLMs) adapt to linguistic variations in named entity recognition (NER) tasks for french.
-Its the official repo for the paper **Adaptability of Large Language Models (LLMs) to Attested Linguistic Genres** (LREC 2026) 
+It is the official repository for the paper **Adaptability of Large Language Models (LLMs) to Attested Linguistic Genres** (LREC 2026) 
 
 ## Main features
 
-1. **Scripts for prompting LLM on a NER corpus with custom prompts**
+1. **Scripts for prompting LLM on a NER corpus with customized prompts**
 2. **Scripts for processing the LLM output and evaluating with fuzzy matching**
 3. **Scripts for analysing the result and study of the impact of variations in wording and domain on LLM performance**
 
 ## Repository structure
-- `data/`: Fenec source texts and annotation files; should be downloaded from the official FENEC repository [Here (put the real url)](link_to_fenec)
+- `data/`: NEM.fr source texts and annotation files; should be downloaded from the official NEM.fr repository [https://github.com/ayusekyo111/NEM.fr](link_to_NEM.fr)
 - `scripts/`: Main scripts 
 
 ## How to :
