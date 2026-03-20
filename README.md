@@ -10,7 +10,7 @@ It is the official repository for the paper **Adaptability of Large Language Mod
 3. **Scripts for analysing the result and study of the impact of variations in wording and domain on LLM performance**
 
 ## Repository structure
-- `data/`: NEM.fr source texts and annotation files; should be downloaded from the official NEM.fr repository [https://github.com/ayusekyo111/NEM.fr](link_to_NEM.fr)
+- `data/`: NEM.fr source texts and annotation files; should be downloaded from the official [NEM.fr repository](https://github.com/ayusekyo111/NEM.fr)
 - `scripts/`: Main scripts 
 
 ## How to :
